@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Selected data science and machine learning projects by K Satyavamsi." />
+  <meta name="theme-color" content="#080b10" />
+  <title>Projects — K Satyavamsi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=facefix1" />
+</head>
+<body class="projects-page">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="mood-control">
+      <button class="mood-face" id="mood-face" type="button" aria-label="Click 7 times" title="A little secret"><span class="mood-face-emoji" id="mood-face-emoji" aria-hidden="true">
+<span class="normal-face-glyph" aria-hidden="true">🙂</span>
+<span class="angry-face-glyph" aria-hidden="true"><svg viewBox="0 0 48 48" class="red-devil-face"><path d="M8 18 6 5q8 2 13 9M40 18l2-13q-8 2-13 9" fill="#ed3434" stroke="#8f171d" stroke-width="1.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="18" fill="#f0443e" stroke="#a51d27" stroke-width="2"/><ellipse cx="17" cy="23" rx="3.4" ry="4.2" fill="#fff"/><ellipse cx="31" cy="23" rx="3.4" ry="4.2" fill="#fff"/><circle cx="18" cy="24" r="1.8" fill="#15232b"/><circle cx="30" cy="24" r="1.8" fill="#15232b"/><path d="M13 30q11 12 22 0" fill="none" stroke="#5a1018" stroke-width="3.2" stroke-linecap="round"/><path d="M18 33q6 4 12 0" fill="none" stroke="#ffb0a8" stroke-width="2" stroke-linecap="round"/></svg></span></span></button>
+      <span class="mood-count-number" id="mood-count-number" aria-live="polite">0</span>
+    </div>
+    <div class="red-mode-message" id="red-mode-message" role="status" aria-live="polite">YOU ENTERED RED MODE</div>
+    <nav aria-label="Primary navigation">
+      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link" href="/skills.html">Skills</a>
+      <a class="nav-link active" href="/projects.html" aria-current="page">Projects</a>
+    </nav>
+  </header>
+  <main class="projects-main">
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="projects-heading">
+        <div>
+          <div class="section-kicker">SELECTED WORK · 2026</div>
+          <h2 id="projects-title">Projects<span class="accent-period">.</span></h2>
+          <p class="projects-intro">A few problems I’ve explored through data, machine learning and practical experimentation.</p>
+        </div>
+        <a class="all-projects-link" href="https://github.com/jayadevuha-ui?tab=repositories" target="_blank" rel="noreferrer">All repositories <span>↗</span></a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-card-top">
+            <span class="project-number">01 / ML</span>
+            <span class="project-status"><span class="status-dot"></span> Live demo</span>
+          </div>
+          <h3>Credit Default Risk Intelligence</h3>
+          <p class="project-description">An end-to-end credit risk modeling workflow, from leakage-safe preprocessing and model selection to threshold tuning, explainability and fairness checks.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>Streamlit</span>
+          </div>
+          <div class="project-result"><span>TEST ROC-AUC</span><strong>0.7800</strong><span class="result-divider"></span><span>PR-AUC</span><strong>0.5525</strong></div>
+          <div class="project-actions">
+            <a href="https://credit-default-risk-intelligence-69rgyefwwpr9jcnefo2ism.streamlit.app" target="_blank" rel="noreferrer">Live project <span>↗</span></a>
+            <a href="https://github.com/jayadevuha-ui/credit-default-risk-intelligence" target="_blank" rel="noreferrer">Source code <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <span class="project-number">02 / FORECASTING</span>
+            <span class="project-status"><span class="status-dot"></span> Live demo</span>
+          </div>
+          <h3>Retail Sales Forecasting Intelligence</h3>
+          <p class="project-description">A retail analytics and time-series project that studies revenue patterns, engineers lag features and benchmarks forecasting models against a seasonal baseline.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Pandas</span><span>Time Series</span><span>Streamlit</span>
+          </div>
+          <div class="project-result"><span>DATASET</span><strong>530k+</strong><span class="result-divider"></span><span>TEST WINDOW</span><strong>42 days</strong></div>
+          <div class="project-actions">
+            <a href="https://retail-sales-forecasting-intelligence-3gt7qsyapxmpho4w7rquft.streamlit.app" target="_blank" rel="noreferrer">Live project <span>↗</span></a>
+            <a href="https://github.com/jayadevuha-ui/retail-sales-forecasting-intelligence" target="_blank" rel="noreferrer">Source code <span>↗</span></a>
+          </div>
+        </article>
+ 
+        <article class="project-card">
+          <div class="project-card-top">
+            <span class="project-number">03 / CLASSIFICATION</span>
+            <span class="project-status">Academic · Team 3</span>
+          </div>
+          <h3>Credit Card Approval Prediction</h3>
+          <p class="project-description">A collaborative classification study exploring credit application data through preprocessing, model comparison, cross-validation, hyperparameter tuning and an Artificial Neural Network experiment.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>TensorFlow</span>
+          </div>
+          <div class="project-result"><span>MODELS</span><strong>8 explored</strong><span class="result-divider"></span><span>FORMAT</span><strong>Jupyter Notebook</strong></div>
+          <div class="project-actions">
+            <a href="https://github.com/jayadevuha-ui/credit-card-approval-prediction" target="_blank" rel="noreferrer">Source code <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <span class="project-number">04 / REGRESSION</span>
+            <span class="project-status">Academic · Team 3</span>
+          </div>
+          <h3>Garment Worker Productivity Prediction</h3>
+          <p class="project-description">A collaborative regression project analyzing garment manufacturing operations, engineering operational features and comparing predictive models to estimate worker productivity.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>TensorFlow</span>
+          </div>
+          <div class="project-result"><span>MODELS</span><strong>7 explored</strong><span class="result-divider"></span><span>FORMAT</span><strong>Jupyter Notebook</strong></div>
+          <div class="project-actions">
+            <a href="https://github.com/jayadevuha-ui/Garment-worker-productivity-prediction" target="_blank" rel="noreferrer">Source code <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <span>© <span id="year"></span> K Satyavamsi</span>
+    <span>Made with curiosity <span class="footer-spark">✳</span></span>
+  </footer>
+  <script src="/script.js?v=facefix1"></script>
+</body>
+</html>
