@@ -32,19 +32,55 @@
   <main>
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="portrait-wrap">
-        <div class="portrait-frame">
-          <div class="portrait-glow" aria-hidden="true"></div>
-          <div class="portrait-placeholder">
-            <svg viewBox="0 0 120 120" role="presentation" aria-hidden="true">
-              <circle cx="60" cy="39" r="21"></circle>
-              <path d="M20 108c2-24 17-38 40-38s38 14 40 38"></path>
+        <article class="identity-card" aria-label="Personal identity card for K J S Vamsi">
+          <div class="id-card-grid" aria-hidden="true"></div>
+          <div class="id-card-blueprint" aria-hidden="true">
+            <svg viewBox="0 0 420 560" preserveAspectRatio="none">
+              <g fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M-20 155 95 40 210 155 325 40 445 155M-20 190 95 75 210 190 325 75 445 190"/>
+                <path d="M-15 390 90 285 210 405 330 285 440 395M-15 420 90 315 210 435 330 315 440 425"/>
+                <path d="M35 0V560M385 0V560M0 90H420M0 470H420"/>
+                <path d="M65 0 65 560M355 0 355 560M0 125H420M0 445H420" stroke-dasharray="3 7"/>
+                <path d="M110 560V255h200v305M130 560V278h160v282M150 560V300h120v260"/>
+                <path d="M175 560V330h70v230M185 330v-35h50v35M195 295v-24h30v24"/>
+                <path d="M25 230h80v-45h-80zM315 230h80v-45h-80zM25 250h80M315 250h80"/>
+                <path d="M0 30h420M0 520h420"/>
+              </g>
+              <g fill="currentColor" opacity=".65" font-family="monospace" font-size="7">
+                <text x="12" y="18">KS / IDENTITY SYSTEMS</text><text x="12" y="535">PERSONAL ARCHIVE • 2026</text>
+                <text x="340" y="18">01—KS</text><text x="340" y="548">IND</text>
+              </g>
             </svg>
-            <span class="placeholder-title">YOUR PHOTO</span>
-            <span class="placeholder-subtitle">Replace with your portrait</span>
           </div>
-          <span class="photo-corner corner-tl"></span><span class="photo-corner corner-br"></span>
-        </div>
-        <div class="portrait-caption"><span class="caption-dot"></span> A little about me, in pixels</div>
+          <div class="id-card-topline">
+            <span class="id-chip"><span></span> PERSONAL IDENTIFICATION</span>
+            <span class="id-edition">NO. 001</span>
+          </div>
+          <div class="id-card-main">
+            <div class="id-emblem" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><path d="M60 5 112 35 112 85 60 115 8 85 8 35Z"/><path d="M29 39 60 21 91 39 91 77 60 95 29 77Z"/><path d="m40 60 13 13 28-30"/></svg>
+              <span>KS</span>
+            </div>
+            <div class="id-photo-slot">
+              <div class="id-photo-inner">
+                <svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="43" r="25"/><path d="M15 145c3-37 19-58 45-58s42 21 45 58"/></svg>
+                <span>YOUR<br>PHOTO</span>
+              </div>
+              <small>PHOTO ID</small>
+            </div>
+          </div>
+          <div class="id-name-block">
+            <span class="id-overline">IDENTITY HOLDER</span>
+            <strong>K J S VAMSI</strong>
+            <span class="id-role">DATA SCIENCE <i>✳</i> AI / ML</span>
+          </div>
+          <div class="id-card-bottom">
+            <div class="id-barcode" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <span class="id-access">PORTFOLIO ACCESS <b>✓</b></span>
+          </div>
+          <span class="id-screw screw-one" aria-hidden="true"></span><span class="id-screw screw-two" aria-hidden="true"></span>
+        </article>
+        <div class="portrait-caption"><span class="caption-dot"></span> PERSONAL IDENTITY / DIGITAL PROFILE</div>
       </div>
 
       <div class="hero-copy">
