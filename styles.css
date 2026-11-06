@@ -595,3 +595,63 @@ body.red-mode .site-header .mood-count-number { display:none!important; }
 /* Red devil face without eyebrows: clean custom SVG, consistent on every tab */
 .site-header .angry-face-glyph { display:block!important; width:2rem; height:2rem; filter:none!important; }
 .site-header .red-devil-face { display:block; width:100%; height:100%; filter:none!important; }
+
+
+/* Blueprint access-card portrait — reference-inspired identity badge */
+.portrait-wrap { width:100%; max-width:430px; justify-self:center; }
+.identity-card {
+  --id-blue:#8db8e7; position:relative; isolation:isolate; overflow:hidden;
+  width:min(100%,390px); aspect-ratio: .735; margin:0 auto;
+  padding:25px 25px 21px; color:#e8f2ff;
+  background:
+    radial-gradient(ellipse at 50% 48%,rgba(55,111,173,.35),transparent 58%),
+    linear-gradient(145deg,#12365f 0%,#0b2748 48%,#07182d 100%);
+  border:1px solid rgba(190,220,255,.7);
+  clip-path:polygon(0 2.2%,5% 0,95% 0,100% 2.2%,100% 97.5%,94% 100%,6% 100%,0 97.5%);
+  box-shadow:0 28px 70px rgba(0,0,0,.45),inset 0 0 0 5px rgba(2,12,26,.75),inset 0 0 0 6px rgba(174,210,255,.22);
+}
+.identity-card::before,.identity-card::after { content:"";position:absolute;z-index:-1;pointer-events:none; }
+.identity-card::before { inset:10px;border:1px solid rgba(190,220,255,.34);clip-path:polygon(0 2%,5% 0,95% 0,100% 2%,100% 98%,95% 100%,5% 100%,0 98%); }
+.identity-card::after { inset:0;background:linear-gradient(115deg,transparent 10%,rgba(255,255,255,.08) 48%,transparent 58%);opacity:.55; }
+.id-card-grid { position:absolute;inset:0;z-index:-1;opacity:.16;background-image:linear-gradient(rgba(180,215,255,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(180,215,255,.35) 1px,transparent 1px);background-size:22px 22px;mask-image:linear-gradient(transparent,#000 15%,#000 85%,transparent); }
+.id-card-blueprint { position:absolute;inset:0;z-index:-1;color:rgba(196,222,255,.36); }
+.id-card-blueprint svg { width:100%;height:100%; }
+.id-card-topline { display:flex;justify-content:space-between;align-items:center;gap:8px;padding:5px 0 18px;border-bottom:1px solid rgba(203,226,255,.34);font:600 .55rem "Space Grotesk",sans-serif;letter-spacing:.13em; }
+.id-chip { display:flex;align-items:center;gap:8px; }
+.id-chip span { width:7px;height:7px;border-radius:50%;background:#7df0d0;box-shadow:0 0 10px #7df0d0; }
+.id-edition { color:#9bbce0; }
+.id-card-main { display:flex;align-items:center;justify-content:space-between;gap:14px;padding:26px 0 20px; }
+.id-emblem { width:48%;max-width:166px;aspect-ratio:1;position:relative;display:grid;place-items:center; }
+.id-emblem svg { position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#c5def8;stroke-width:2.5;filter:drop-shadow(0 0 8px rgba(142,193,255,.35)); }
+.id-emblem span { font:700 clamp(2.2rem,5vw,3.6rem)/1 "Space Grotesk",sans-serif;letter-spacing:-.1em;color:#e8f3ff;text-shadow:0 2px 12px rgba(0,0,0,.4); }
+.id-photo-slot { width:43%;max-width:145px;position:relative;padding:6px;border:1px solid rgba(217,235,255,.82);background:rgba(4,18,35,.68);box-shadow:0 0 0 3px rgba(170,209,255,.1),0 8px 22px rgba(0,0,0,.28);transform:rotate(1.5deg); }
+.id-photo-inner { aspect-ratio: .78;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;overflow:hidden;background:linear-gradient(160deg,#244b70,#102c4a);border:1px solid rgba(194,220,250,.35);color:#b9d5f3; }
+.id-photo-inner svg { width:58%;fill:rgba(180,211,243,.15);stroke:#a9c8e9;stroke-width:2.2; }
+.id-photo-inner span { font:600 .5rem/1.4 "Space Grotesk",sans-serif;letter-spacing:.2em;text-align:center; }
+.id-photo-slot small { display:block;padding-top:5px;text-align:center;font:600 .43rem "Space Grotesk",sans-serif;letter-spacing:.2em;color:#a9c8e9; }
+.id-name-block { padding:15px 0 13px;border-top:1px solid rgba(203,226,255,.35);border-bottom:1px solid rgba(203,226,255,.35); }
+.id-overline { display:block;color:#9bbce0;font:600 .53rem "Space Grotesk",sans-serif;letter-spacing:.2em;margin-bottom:5px; }
+.id-name-block strong { display:block;font:700 clamp(1.65rem,4.2vw,2.45rem)/1 "Space Grotesk",sans-serif;letter-spacing:.015em;text-shadow:0 2px 10px rgba(0,0,0,.28); }
+.id-role { display:block;margin-top:9px;color:#c0d8f2;font:600 .66rem "Space Grotesk",sans-serif;letter-spacing:.19em; }
+.id-role i { color:#7df0d0;font-style:normal;padding:0 5px; }
+.id-card-bottom { display:flex;align-items:end;justify-content:space-between;gap:12px;padding-top:17px; }
+.id-barcode { height:24px;display:flex;align-items:stretch;gap:2px;opacity:.83; }
+.id-barcode span { display:block;width:2px;background:#d6e8fb; }
+.id-barcode span:nth-child(3n) { width:4px; }.id-barcode span:nth-child(4n) { width:1px; }
+.id-access { color:#d6e8fb;font:600 .49rem "Space Grotesk",sans-serif;letter-spacing:.1em;white-space:nowrap; }
+.id-access b { color:#7df0d0;font-size:.8rem;padding-left:3px; }
+.id-screw { position:absolute;width:9px;height:9px;border-radius:50%;border:1px solid rgba(210,232,255,.6);background:radial-gradient(circle,#91b5d8 0 1px,#172f4b 2px 100%);box-shadow:0 1px 4px #020b16; }
+.screw-one { top:14px;left:14px; }.screw-two { top:14px;right:14px; }
+.portrait-caption { justify-content:center;font:600 .62rem "Space Grotesk",sans-serif;letter-spacing:.12em;text-transform:uppercase; }
+@media(max-width:720px) {
+ .portrait-wrap { width:min(100%,360px); }
+ .identity-card { padding:22px 22px 18px; }
+ .id-card-main { padding:22px 0 17px; }
+ .id-name-block { padding:13px 0 11px; }
+}
+@media(max-width:390px) {
+ .identity-card { padding:19px 19px 16px; }
+ .id-card-topline { font-size:.48rem; }
+ .id-card-bottom { padding-top:13px; }
+ .id-access { font-size:.43rem; }
+}
