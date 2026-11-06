@@ -708,3 +708,125 @@ body.red-mode .site-header .mood-count-number { display:none!important; }
 @media (prefers-reduced-motion:reduce){.flip-inner{transition-duration:.01s}}
 /* ===== END ===== */
 
+
+
+/* ===== Portfolio-integrated flip ID card refresh =====
+   Match the site's midnight/navy palette, blue accents and mint details.
+   Card dimensions are tied to the hero column rather than a fixed thumbnail.
+*/
+.portrait-wrap {
+  width: 100%;
+  max-width: 500px;
+  justify-self: center;
+}
+.flip {
+  --g: #78a8ff;
+  --red: #64edc1;
+  --ink: #f3f6fc;
+  --dim: #aab8cc;
+  --base: #0b1422;
+  --panel: rgba(7, 13, 23, .9);
+  width: clamp(320px, 28vw, 410px);
+  max-width: 100%;
+  aspect-ratio: 0.72;
+  border-radius: 18px;
+  background: #0b1422;
+  box-shadow: 0 28px 76px rgba(0,0,0,.42), 0 0 0 1px rgba(120,168,255,.18);
+}
+.face {
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 50% 18%, rgba(77,130,201,.2), transparent 48%),
+    linear-gradient(150deg, #172b45 0%, #0d192a 48%, #09111d 100%);
+  box-shadow: inset 0 0 0 1px rgba(205,224,255,.22),
+              inset 0 0 0 7px rgba(120,168,255,.035),
+              0 24px 60px -20px rgba(0,0,0,.68);
+}
+.face::before { opacity: .46; mix-blend-mode: screen; }
+.face > * { text-shadow: 0 1px 5px rgba(0,0,0,.72); }
+.f-label {
+  left: 9%; top: 4.2%;
+  color: #dce8fb;
+  font-size: 2.05cqw;
+  letter-spacing: .19em;
+}
+.f-photo {
+  left: 13%; top: 11%; width: 74%;
+  aspect-ratio: 1 / 1.08;
+  background: linear-gradient(135deg, #a9c8ff, #4e83ca);
+  padding: 0;
+  clip-path: polygon(0 0, 92% 0, 100% 7%, 100% 100%, 0 100%);
+  box-shadow: 0 12px 30px rgba(0,0,0,.28);
+}
+.f-photo div {
+  inset: 2px;
+  background: #0a1422;
+  clip-path: polygon(0 0, 92% 0, 100% 7%, 100% 100%, 0 100%);
+}
+.f-photo img { object-position: center 34%; }
+.f-photo svg { opacity: 0; }
+.f-code {
+  left: 8%; right: 8%; top: 68%; height: 12.5%;
+  border: 1px solid rgba(120,168,255,.62);
+  background: linear-gradient(100deg, rgba(7,15,27,.96), rgba(19,37,60,.92));
+  box-shadow: inset 0 1px rgba(255,255,255,.06);
+}
+.f-bars {
+  background: repeating-linear-gradient(90deg,
+    #b9d2ff 0 1px, transparent 1px 3px,
+    #78a8ff 3px 4px, transparent 4px 6px);
+  opacity: .82;
+}
+.f-codetxt {
+  color: #eaf1fc;
+  font-size: 3cqw;
+  letter-spacing: .035em;
+}
+.f-codetxt em { color: var(--mint); }
+.f-rule {
+  left: 9%; top: 83%; width: 18%; height: 1px;
+  background: var(--mint);
+}
+.f-name {
+  left: 9%; top: 85%;
+  max-width: 82%;
+  color: #f3f6fc;
+  font-size: 6.3cqw;
+  letter-spacing: .075em;
+  white-space: nowrap;
+}
+.face.back {
+  background:
+    radial-gradient(ellipse at 50% 44%, rgba(83,133,199,.2), transparent 52%),
+    linear-gradient(155deg, #172b45, #0b1524 70%, #080f1b);
+}
+.b-cta {
+  left: 10%; right: 10%; top: 38%; height: 24%;
+  border: 1px solid rgba(120,168,255,.68);
+  background: rgba(7,14,25,.76);
+  color: #eaf1fc;
+  font-size: 9.5cqw;
+  letter-spacing: .015em;
+  box-shadow: 0 14px 35px rgba(0,0,0,.24), inset 0 1px rgba(255,255,255,.07);
+}
+.b-cta::before, .b-cta::after {
+  width: 1cqw; height: 24%;
+  background: var(--mint);
+}
+.flip-hint {
+  margin-top: 17px;
+  color: #8292a8;
+  font: 500 .7rem "DM Sans", sans-serif;
+  letter-spacing: .13em;
+}
+@media (max-width: 1000px) and (min-width: 721px) {
+  .flip { width: clamp(300px, 34vw, 370px); }
+}
+@media (max-width: 720px) {
+  .portrait-wrap { width: min(100%, 410px); }
+  .flip { width: min(100%, 390px); aspect-ratio: .72; }
+  .flip-hint { margin-top: 13px; }
+}
+@media (max-width: 390px) {
+  .flip { width: 100%; }
+}
