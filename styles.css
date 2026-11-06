@@ -830,3 +830,21 @@ body.red-mode .site-header .mood-count-number { display:none!important; }
 @media (max-width: 390px) {
   .flip { width: 100%; }
 }
+
+
+/* Minimal animated scroll cue beneath the flip ID */
+.portrait-scroll-hint {
+  display: flex;
+  justify-content: center;
+  margin: 17px auto 0;
+  width: 100%;
+}
+.portrait-scroll-hint .scroll-icon {
+  width: 19px;
+  height: 28px;
+  border-color: #68788d;
+  opacity: .9;
+}
+.portrait-scroll-hint .scroll-icon::after {
+  left: 7px;
+}
