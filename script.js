@@ -95,3 +95,24 @@ document.querySelectorAll("[data-placeholder-link]").forEach((link) => {
     if (event.key === COUNT_KEY || event.key === MODE_KEY) render();
   });
 })();
+
+
+/* Original interactive flip ID card */
+
+
+(function(){
+  var c=document.getElementById('flip'); if(!c) return;
+  var faces=c.querySelectorAll('.face');
+  function sync(){
+    var f=c.classList.contains('is-flipped');
+    c.setAttribute('aria-pressed',f);
+    faces[0].setAttribute('aria-hidden',f);
+    faces[1].setAttribute('aria-hidden',!f);
+  }
+  function toggle(){c.classList.toggle('is-flipped');sync();}
+  c.addEventListener('click',toggle);
+  c.addEventListener('keydown',function(e){
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}
+  });
+  sync();
+})();
