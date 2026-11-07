@@ -948,3 +948,23 @@ body.red-mode .site-header .mood-count-number { display:none!important; }
 @media (max-width: 720px) {
   .flip { width: min(100%, 360px); }
 }
+
+
+/* Keep the flip cue centred to the card itself, not the wider portrait column */
+.flip {
+  margin-left: auto;
+  margin-right: auto;
+}
+.flip-footer {
+  width: clamp(300px, 25vw, 360px);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(0);
+}
+@media (max-width: 1000px) and (min-width: 721px) {
+  .flip-footer { width: clamp(290px, 30vw, 340px); }
+}
+@media (max-width: 720px) {
+  .flip-footer { width: min(100%, 360px); }
+}
